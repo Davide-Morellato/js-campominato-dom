@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, ol, menu{
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: currentColor;
+}
+
+
+/* STRUCTURE */
+
+body{
+    background-color: rgb(127, 255, 212);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    background-color: white;
+    align-items: center;
+}
+
+.font-type{
+    font-family: "Gluten", cursive;
+}
+
+.title{
+    color: rgb(71, 132, 212);
+    font-family: "Rubik Gemstones", system-ui;
+}
+
+#difficult{
+    margin-right: 50px;
+    padding: 1px;
+}
+
+.btn{
+    width: 50px;
+}
+
+main{
+    flex-grow: 1;
+}
+
+.counter{
+    margin: 20px;
+    color: rgb(10, 42, 158);
+}
+
+.result{
+    text-align: center;
+    color:  rgb(10, 42, 158);
+}
+
+.d-block{
+    display: block;
+}
+
+.d-none{
+    display: none;
+}
+
+#center{  
+    width: 80%;
+    margin: 50px auto;
+    aspect-ratio: 1/1;
+}
+
+.grid{
+    display: grid;
+}
+
+.grid-easy{
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.grid-medium{
+    grid-template-columns: repeat(9, 1fr);
+}
+
+.grid-hard{
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.grid > *{
+    aspect-ratio: 1/1;
+    border: 0.5px solid black;
+    text-align: center;
+    line-height: 95px;
+}
+
+.bg-sand{
+    background-color: rgb(250, 235, 199);
+    pointer-events: none;
+}
+
+.bg-red{
+    background-color: darkred;
+}
+
+.pointer-none{
+    pointer-events: none;
+}
+
+footer{
+    background-color: white;
+    padding: 30px;
+}
+
+.ref{
+    text-decoration: underline;
+}

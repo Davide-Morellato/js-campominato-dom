@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik+Gemstones&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&family=Rubik+Gemstones&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./stylez.css">
+        <title>Campo Minato</title>
+    </head>
+    <body>
+
+        <header>
+            <div class="title">
+                <h1>Campo Minato</h1>
+            </div>
+            <div class="font-type">
+                <label for="difficult">Seleziona la difficoltà: </label>
+                <select name="selector" id="difficult">
+                    <option value="easy"> Easy </option>
+                    <option value="medium"> Medium </option>
+                    <option value="hard"> Hard </option>
+                </select>
+                <button class="btn font-type" type="button">Play</button>
+            </div>
+        </header>
+
+        <main>
+            <div class="counter font-type">
+                <h3>Punteggio: <span class="score"></span></h3>
+            </div>
+            <div class="result font-type d-none d-block">
+                <h3>Hai Perso!</h3>
+            </div>
+            <section id="center">
+                <div class="grid">
+                </div>
+            </section>
+            
+        </main>
+        
+        <footer>
+            <div class="made-by">
+                <p>made with &#9829; by <a class="ref" href="#">Zorro</a> </p>
+            </div>
+        </footer>
+        <script src="./main.js"></script>
+
+        <!-- <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div>
+        <div class="cell">ciao</div> -->
+
+    </body>
+</html>
