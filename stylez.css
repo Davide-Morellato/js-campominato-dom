@@ -76,7 +76,7 @@ main{
 }
 
 #center{  
-    width: 80%;
+    width: 50%;
     margin: 50px auto;
     aspect-ratio: 1/1;
 }
@@ -101,7 +101,9 @@ main{
     aspect-ratio: 1/1;
     border: 0.5px solid black;
     text-align: center;
-    line-height: 95px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .bg-sand{
